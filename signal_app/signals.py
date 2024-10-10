@@ -68,17 +68,5 @@ Signal triggered for new user: yashaswini
 User Successfully created
 """
 
-#Task 4-  Topic: Custom Classes in Python
-
-class Rectangle:
-    def __init__(self, length: int, width: int):
-        self.values = [{'length': length}, {'width': width}]
-    
-    def __iter__(self):
-        return iter(self.values)
-rect = Rectangle(10, 5)
-
-for item in rect:
-    print(item)
 
 
