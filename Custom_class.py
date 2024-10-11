@@ -1,10 +1,11 @@
 class Rectangle:
-    def __init__(self, length: int, width: int):
-        self.values = [{'length': length}, {'width': width}]
-    
-    def __iter__(self):
-        return iter(self.values)
-rect = Rectangle(10, 5)
+    def __init__(self,length:int,width:int):
+        self.length=length
+        self.width=width
+    def print_attribute(self):
+        attr={"length":self.length,"width":self.width}
+        for key,value in attr.items():
+            print({key:value})
 
-for item in rect:
-    print(item)
+rect=Rectangle(4,6)
+rect.print_attribute()
